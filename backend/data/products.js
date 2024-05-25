@@ -2,7 +2,7 @@ const products = [
   {
     _id: '1',
     name: '3 X 3 X 6MM ANGLE IRON',
-    image: '/images/3 X 3 X 6MM ANGLE IRON.jpg',
+    image: '/images/ANGLE.jpg',
     description:
       'Angle iron, also known as L-shaped steel, is a versatile and durable structural material commonly used in construction, manufacturing, and various DIY projects. The 3 x 3 x 6mm dimensions refer to the size of the angle iron: 3mm thickness, with legs measuring 3mm each and a total length of 6mm.',
     brand: 'S Mahipal Steel',
@@ -15,7 +15,7 @@ const products = [
   {
     _id: '2',
     name: '7 0.67MM (7 .029) EARTH KELANI 100M',
-    image: '/images/7 0.67MM (7 .029) EARTH KELANI 100M.jpg',
+    image: '/images/KELANI.jpg',
     description:
       'Kelani Cables 7 0.67mm (7.029") Earth Wire is a single-core, copper conductor cable with PVC insulation and sheathing. It is designed for electrical power, lighting, and internal wiring applications in dry locations.',
     brand: 'Kelani',
@@ -28,7 +28,7 @@ const products = [
   {
     _id: '3',
     name: 'AQUA SEAL SPRUCE 20L THAMES',
-    image: '/images/AQUA SEAL SPRUCE 20L THAMES.jpg',
+    image: '/images/AQUA.jpg',
     description:
       'The AQUA SEAL SPRUCE 20L THAMES is a decorative paint product offered by Rohana Hardware. This water-based acrylic coating provides heavy-duty waterproofing and dries to form a highly flexible seamless plastic finish. It comes in a 20-liter container and is designed to enhance and protect surfaces with a durable and waterproof coating.',
     brand: 'THAMES',
@@ -41,7 +41,7 @@ const products = [
   {
     _id: '4',
     name: 'GENERATOR FPG3800EI GIANT',
-    image: '/images/GENERATOR FPG3800EI GIANT.jpg',
+    image: '/images/GENERATOR.jpg',
     description:
       'The GENERATOR FPG3800EI GIANT is a powerful and reliable portable generator designed to meet the needs of heavy-duty users. With a maximum power output of 3800 watts, this generator is capable of handling a wide range of applications, from powering tools and equipment on job sites to providing backup power for homes and businesses during outages.',
     brand: 'GIANT',
@@ -54,7 +54,7 @@ const products = [
   {
     _id: '5',
     name: 'LIGHT L ANGLE 2',
-    image: '/images/LIGHT L ANGLE 2.jpg',
+    image: '/images/LIGHT.jpg',
     description:
       'The LIGHT L ANGLE 2 is a crucial component in the process of synchronizing generators, particularly in shipboard applications. It is a method used to match the parameters of an incoming generator with those of the bus bar, ensuring a smooth and safe transition of power',
     brand: 'S Mahipal Steel',
@@ -67,7 +67,7 @@ const products = [
   {
     _id: '6',
     name: 'WHEELBARROW HEAVY',
-    image: '/images/WHEELBARROW HEAVY.jpg',
+    image: '/images/WHEELBARROW.jpg',
     description:
       'A heavy-duty wheelbarrow is a robust and durable tool designed to handle demanding tasks in construction, landscaping, and other industrial applications. These wheelbarrows are built to withstand heavy loads and rugged use, making them a reliable choice for professionals and DIY enthusiasts alike.',
     brand: 'MATADOR',
