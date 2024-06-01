@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: '3 X 3 X 6MM ANGLE IRON',
     image: '/images/ANGLE.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: '7 0.67MM (7 .029) EARTH KELANI 100M',
     image: '/images/KELANI.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'AQUA SEAL SPRUCE 20L THAMES',
     image: '/images/AQUA.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'GENERATOR FPG3800EI GIANT',
     image: '/images/GENERATOR.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'LIGHT L ANGLE 2',
     image: '/images/LIGHT.jpg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'WHEELBARROW HEAVY',
     image: '/images/WHEELBARROW.jpg',
     description:
