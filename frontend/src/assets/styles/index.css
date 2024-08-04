@@ -58,5 +58,5 @@ table th {
 }
 .image-container {
   display: flex;
-  justify-content: center; /* Centers the image horizontally */
+  justify-content: center;
 }

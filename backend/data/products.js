@@ -6,7 +6,7 @@ const products = [
       "Angle iron, also known as L-shaped steel, is a versatile and durable structural material commonly used in construction, manufacturing, and various DIY projects. The 3 x 3 x 6mm dimensions refer to the size of the angle iron: 3mm thickness, with legs measuring 3mm each and a total length of 6mm.",
     brand: "S Mahipal Steel",
     category: "BUILDING & HARDWARE",
-    price: 15240.0,
+    price: 15239.99,
     countInStock: 10,
     rating: 4.5,
     numReviews: 12,
