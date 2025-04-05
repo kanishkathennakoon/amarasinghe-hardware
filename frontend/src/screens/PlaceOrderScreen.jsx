@@ -85,7 +85,7 @@ const PlaceOrderScreen = () => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x Rs. {item.price} = Rs.{" "}
+                          {item.qty} x Rs.{item.price} = Rs.
                           {item.qty * item.price}
                         </Col>
                       </Row>
