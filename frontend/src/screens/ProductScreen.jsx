@@ -76,7 +76,7 @@ const ProductScreen = () => {
                   <Row>
                     <Col>Price:</Col>
                     <Col>
-                      <strong>Rs.{product.price}</strong>
+                      <strong>Rs.{product.price.toFixed(2)}</strong>
                     </Col>
                   </Row>
                 </ListGroup.Item>
