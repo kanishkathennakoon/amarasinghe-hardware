@@ -80,13 +80,11 @@ const PlaceOrderScreen = () => {
                           />
                         </Col>
                         <Col md={3}>
-                          <Link to={`/products/${item.product}`}>
-                            {item.name}
-                          </Link>
+                          <Link to={`/product/${item._id}`}>{item.name}</Link>
                         </Col>
                         <Col md={4}>
                           {item.qty} x Rs.{item.price.toFixed(2)} = Rs.
-                          {item.qty * item.price.toFixed(2)}
+                          {(item.qty * item.price).toFixed(2)}
                         </Col>
                       </Row>
                     </ListGroup.Item>
