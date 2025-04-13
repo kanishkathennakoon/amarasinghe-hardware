@@ -83,8 +83,16 @@ const PlaceOrderScreen = () => {
                           <Link to={`/product/${item._id}`}>{item.name}</Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x Rs.{item.price.toFixed(2)} = Rs.
-                          {(item.qty * item.price).toFixed(2)}
+                          {item.qty} x Rs.{" "}
+                          {new Intl.NumberFormat("en-US", {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          }).format(item.price)}{" "}
+                          = Rs.{" "}
+                          {new Intl.NumberFormat("en-US", {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          }).format(item.qty * item.price)}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -103,28 +111,52 @@ const PlaceOrderScreen = () => {
               <ListGroup.Item>
                 <Row>
                   <Col>Items:</Col>
-                  <Col>Rs. {cart.itemsPrice}</Col>
+                  <Col>
+                    Rs.{" "}
+                    {new Intl.NumberFormat("en-US", {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    }).format(cart.itemsPrice)}
+                  </Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping:</Col>
-                  <Col>Rs. {cart.shippingPrice}</Col>
+                  <Col>
+                    Rs.{" "}
+                    {new Intl.NumberFormat("en-US", {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    }).format(cart.shippingPrice)}
+                  </Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Tax:</Col>
-                  <Col>Rs. {cart.taxPrice}</Col>
+                  <Col>
+                    Rs.{" "}
+                    {new Intl.NumberFormat("en-US", {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    }).format(cart.taxPrice)}
+                  </Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Total:</Col>
-                  <Col>Rs. {cart.totalPrice}</Col>
+                  <Col>
+                    Rs.{" "}
+                    {new Intl.NumberFormat("en-US", {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    }).format(cart.totalPrice)}
+                  </Col>
                 </Row>
               </ListGroup.Item>
 

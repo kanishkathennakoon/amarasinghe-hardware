@@ -29,7 +29,13 @@ const Product = ({ product }) => {
           />
         </Card.Text>
 
-        <Card.Text as="h3">Rs. {product.price.toFixed(2)}</Card.Text>
+        <Card.Text as="h3">
+          Rs.{" "}
+          {new Intl.NumberFormat("en-US", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          }).format(product.price)}
+        </Card.Text>
       </Card.Body>
     </Card>
   );
