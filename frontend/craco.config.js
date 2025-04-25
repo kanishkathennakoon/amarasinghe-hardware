@@ -1,5 +1,5 @@
 module.exports = {
   devServer: {
-    allowedHosts: "all", // Allow all hosts
+    allowedHosts: ["all"], // Allow all hosts
   },
 };
