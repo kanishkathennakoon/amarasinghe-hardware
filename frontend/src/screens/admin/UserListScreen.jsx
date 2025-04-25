@@ -3,37 +3,23 @@ import { Table, Button } from "react-bootstrap";
 import { FaTimes, FaTrash, FaEdit, FaCheck } from "react-icons/fa";
 import Message from "../../components/Message";
 import Loader from "../../components/Loader";
-import { toast } from "react-toastify";
-import {
-  useGetUsersQuery,
-  useDeleteUserMutation,
-} from "../../slices/usersApiSlice";
+import { useGetUsersQuery } from "../../slices/usersApiSlice";
 
 const UserListScreen = () => {
   const { data: users, refetch, isLoading, error } = useGetUsersQuery();
-  const [deleteUser, { isLoading: loadingDelete }] = useDeleteUserMutation();
 
-  const deleteHandler = async (id) => {
-    if (window.confirm("Are you sure to delete this user?")) {
-      try {
-        await deleteUser(id);
-        toast.success("User deleted successfully");
-        refetch();
-      } catch (err) {
-        toast.error(err?.data?.message || err.error);
-      }
-    }
+  const deleteHandler = (id) => {
+    console.log("delete");
   };
 
   return (
     <>
       <h1>Users</h1>
-      {loadingDelete && <Loader />}
       {isLoading ? (
         <Loader />
       ) : error ? (
         <Message variant="danger">{error}</Message>
-      ) : users && users.length > 0 ? (
+      ) : (
         <Table striped hover responsive className="table-sm">
           <thead>
             <tr>
@@ -41,6 +27,7 @@ const UserListScreen = () => {
               <th>NAME</th>
               <th>EMAIL</th>
               <th>ADMIN</th>
+
               <th></th>
             </tr>
           </thead>
@@ -52,6 +39,7 @@ const UserListScreen = () => {
                 <td>
                   <a href={`mailto:${user.email}`}>{user.email}</a>
                 </td>
+
                 <td>
                   {user.isAdmin ? (
                     <FaCheck style={{ color: "green" }} />
@@ -59,6 +47,7 @@ const UserListScreen = () => {
                     <FaTimes style={{ color: "red" }} />
                   )}
                 </td>
+
                 <td>
                   <LinkContainer to={`admin/user/${user._id}/edit`}>
                     <Button variant="light" className="btn-sm">
@@ -77,8 +66,6 @@ const UserListScreen = () => {
             ))}
           </tbody>
         </Table>
-      ) : (
-        <Message variant="info">No users found</Message>
       )}
     </>
   );
