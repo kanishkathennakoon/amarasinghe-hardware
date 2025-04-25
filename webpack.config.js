@@ -1,15 +1,5 @@
-const path = require("path");
-
 module.exports = {
   devServer: {
-    static: {
-      directory: path.join(__dirname, "dist"), // Ensure this path is correct
-    },
-    compress: true,
-    port: 3000, // Specify the port you want to use
-    open: true, // Automatically open the browser
-    hot: true, // Enable Hot Module Replacement
-    allowedHosts: ["all"], // Use 'all' to allow all hosts or specify an array of allowed hosts
     setupMiddlewares: (middlewares, devServer) => {
       if (!devServer) {
         throw new Error("webpack-dev-server is not defined");
