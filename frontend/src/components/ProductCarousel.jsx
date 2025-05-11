@@ -24,7 +24,12 @@ const ProductCarousel = () => {
             />
             <Carousel.Caption className="carousel-caption">
               <h2>
-                {product.name} (${product.price})
+                {product.name} (Rs.
+                {new Intl.NumberFormat("en-US", {
+                  minimumFractionDigits: 2,
+                  maximumFractionDigits: 2,
+                }).format(product.price)}
+                )
               </h2>
             </Carousel.Caption>
           </Link>

@@ -30,7 +30,7 @@ const Product = ({ product }) => {
         </Card.Text>
 
         <Card.Text as="h3">
-          Rs.{" "}
+          Rs.
           {new Intl.NumberFormat("en-US", {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
